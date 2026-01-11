@@ -169,6 +169,23 @@ Your backend should emit these events:
 - Falls back to demo mode (admin/admin123) if API is unavailable
 - All components are configured for real-time updates
 
+## Deployment
+
+### Railway Deployment
+
+For detailed instructions on deploying to Railway, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+
+**Quick Start:**
+1. Push your code to GitHub
+2. Create a new Railway project
+3. Connect your GitHub repository
+4. Set environment variables:
+   - `VITE_API_BASE_URL` - Your backend API URL
+   - `VITE_WS_URL` - Your WebSocket URL (use `wss://` in production)
+5. Railway will automatically build and deploy
+
+The application will be available at your Railway-provided domain.
+
 ## Future Enhancements
 
 - Add chart visualizations using Recharts (already in dependencies)
